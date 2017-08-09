@@ -58,3 +58,32 @@ img {
         padding: .8rem; }
         .menu-bg .menu > nav > ul a:hover {
           color: #122ab2; }
+
+.introduction {
+  font-size: 3em;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3.8rem .8rem; }
+
+.about {
+  border-top: 0.2rem solid #122ab2;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3.8rem 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .about .about-info {
+    flex: 2 1 300px;
+    margin: 0 .8rem; }
+    .about .about-info > h1 {
+      font-size: 3em;
+      margin-bottom: 1rem; }
+    .about .about-info > p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: #7c7c7c; }
+  .about .about-img {
+    flex: 1 1 160px;
+    margin: 0 .8rem; }

@@ -1,7 +1,13 @@
 $dark:#222222;
+$dark-light:#7c7c7c;
 $blue-dark:#122ab2;
 $blue:#2c70ff;
 $grid-width:960px;
+
+@mixin gridWidthAndPosition(){
+    max-width: $grid-width;
+    margin:0 auto;
+}
 
 /*RESET*/
 body,h1,h2,p,ul,li,a {
@@ -37,8 +43,7 @@ img{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width:$grid-width;
-        margin:0 auto;
+        @include gridWidthAndPosition();
         padding:.8rem;
       >a,p{
           padding:.5rem;
@@ -50,8 +55,7 @@ img{
 .menu-bg{
     background:$blue;
     .menu{
-        max-width: $grid-width;
-        margin:0 auto;
+        @include gridWidthAndPosition();
         padding:1rem 0;
         display: flex;
         flex-wrap:wrap;
@@ -77,5 +81,38 @@ img{
                 }
             }
         }
+    }
+}
+
+.introduction{
+    font-size: 3em;
+    line-height: 1;
+    @include gridWidthAndPosition();
+    padding:3.8rem .8rem;
+}
+
+.about{
+    border-top:.2rem solid $blue-dark;
+    @include gridWidthAndPosition();
+    padding:3.8rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    .about-info{
+        flex:2 1 300px;
+        margin: 0 .8rem;
+        >h1{
+            font-size:3em;
+            margin-bottom:1rem;
+        }
+        >p{
+            font-size:1.25em;
+            line-height: 1.4;
+            margin-bottom:1rem;
+            color:$dark-light;
+        }
+    }
+    .about-img{
+        flex:1 1 160px;
+        margin:0 .8rem;
     }
 }
