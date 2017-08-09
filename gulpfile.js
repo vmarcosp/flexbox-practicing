@@ -1,7 +1,8 @@
 const gulp = require('gulp'),
-    browserSync = require('browser-sync');
+    sass = require('gulp-sass'),
+    browserSync = require('browser-sync').create();
 
-gulp.task('serve', () => {
+gulp.task('serve', ['sass'], () => {
 
     browserSync.init({
         server: './'
@@ -11,5 +12,13 @@ gulp.task('serve', () => {
     gulp.watch('css/style.css').on('change', browserSync.reload);
 
 });
+
+gulp.task('sass', function () {
+    return gulp.src('scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('css'))
+        .pipe(browserSync.stream());
+});
+
 
 gulp.task('default', ['serve']);
