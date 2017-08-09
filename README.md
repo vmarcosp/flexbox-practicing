@@ -1,2 +1,2 @@
 # FlexBoxTemplate
-A simple template builded using FlexBox, only to practices
+A simple template builded using FlexBox, only to practice.
