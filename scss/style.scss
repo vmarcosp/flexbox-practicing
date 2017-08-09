@@ -6,6 +6,7 @@ $blue-greened:#66d9eb;
 $purple:#ae81ff;
 $grid-width:960px;
 $gray-light:#f7f7f7;
+$gray-semi-light:#a4a4a4;
 $pink:#f9265e;
 
 @mixin gridWidthAndPosition(){
@@ -154,4 +155,73 @@ img{
             border-color: $blue-greened;
         }
     }
+}
+
+.pricing{
+    padding: 4rem;
+    background:$gray-light;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; 
+    >.pricing-item{
+        flex:1 1 260px;
+        border:.3rem solid white;
+        padding:.8rem;
+        margin:1rem;
+        >h2{
+            font-size:3em;
+            color:$gray-semi-light;
+            text-align: center;
+            margin-top:1.2rem;
+        }
+        >a{
+            max-width: 300px;
+            display: block;
+            margin:1.1rem auto;
+            border:solid .2rem $dark;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding:1rem;
+            color:$dark;
+            text-align: center;
+        }
+        >ul{
+            max-width: 300px;
+            margin:1.1rem auto;
+            font-size: 1.25em;
+            line-height: 1;
+            font-style: italic;
+        }
+        >span{
+            max-width:300px;
+            font-size:3em;
+            margin:1.1rem auto;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            border: {
+                bottom:solid .3rem white;
+                top:solid .3rem white;
+            }
+            >sup{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.pricing-item > ul > li {
+    display: flex;
+    margin-bottom:.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-item > ul > li::after {
+    content:'';
+    display: block;
+    width:.4rem;
+    height:.4rem;
+    background:$blue;
 }
