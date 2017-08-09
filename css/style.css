@@ -25,7 +25,22 @@ img {
   color: white; }
   .top-bar-bg > .top-bar {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 960px;
-    margin: 0 auto; }
-    .top-bar-bg > .top-bar > a {
+    margin: 0 auto;
+    padding: .8rem; }
+    .top-bar-bg > .top-bar > a, .top-bar-bg > .top-bar p {
+      padding: .5rem;
       color: white; }
+
+.menu-bg {
+  background: #2c70ff; }
+  .menu-bg .menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }

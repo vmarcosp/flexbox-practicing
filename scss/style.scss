@@ -1,5 +1,6 @@
 $dark:#222222;
 $blue-dark:#122ab2;
+$blue:#2c70ff;
 $grid-width:960px;
 
 /*RESET*/
@@ -34,10 +35,27 @@ img{
     color:white;
     >.top-bar{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         max-width:$grid-width;
         margin:0 auto;
-      >a{
+        padding:.8rem;
+      >a,p{
+          padding:.5rem;
           color:white;
       }  
+    }
+}
+
+.menu-bg{
+    background:$blue;
+    .menu{
+        max-width: $grid-width;
+        margin:0 auto;
+        padding:1rem 0;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
