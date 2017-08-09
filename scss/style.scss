@@ -1,4 +1,43 @@
+$dark:#222222;
+$blue-dark:#122ab2;
+$grid-width:960px;
+
+/*RESET*/
+body,h1,h2,p,ul,li,a {
+  margin: 0px;
+  padding: 0px; }
+
 body{
-    margin:0px;
-    padding:0px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    color:$dark;
+}
+
+ul{
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width:100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.top-bar-bg{
+    background:$blue-dark;
+    color:white;
+    >.top-bar{
+        display: flex;
+        max-width:$grid-width;
+        margin:0 auto;
+      >a{
+          color:white;
+      }  
+    }
 }
