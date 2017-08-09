@@ -2,7 +2,11 @@ $dark:#222222;
 $dark-light:#7c7c7c;
 $blue-dark:#122ab2;
 $blue:#2c70ff;
+$blue-greened:#66d9eb;
+$purple:#ae81ff;
 $grid-width:960px;
+$gray-light:#f7f7f7;
+$pink:#f9265e;
 
 @mixin gridWidthAndPosition(){
     max-width: $grid-width;
@@ -114,5 +118,40 @@ img{
     .about-img{
         flex:1 1 160px;
         margin:0 .8rem;
+    }
+}
+
+.products {
+    max-width:$grid-width;
+    margin:3.8rem auto;
+    >h1{
+        font-size: 3em;
+        margin: 0 .8rem 3.8rem .8rem;
+    }
+}
+
+.products-container{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap:wrap;
+    >.product-item{
+        flex:1 1 200px;
+        border-top:solid .3rem;
+        margin:.8rem;
+        >h2{
+            padding:3.8rem 1.2rem;
+            color:$dark-light;
+            font-size: 3em;
+            background:$gray-light;
+        }
+        &.pink{
+            border-color:$pink;
+        }
+        &.purple{
+            border-color: $purple;
+        }
+        &.blue{
+            border-color: $blue-greened;
+        }
     }
 }
