@@ -1,2 +1,2 @@
-# flexbox-estudos
-A repository dedicated to practice FlexBox
+# FlexBoxTemplate
+A simple template builded using FlexBox, only to practices
