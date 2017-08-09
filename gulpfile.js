@@ -7,9 +7,9 @@ gulp.task('serve', ['sass'], () => {
     browserSync.init({
         server: './'
     });
+    gulp.watch('scss/*.scss', ['sass']);
 
-    gulp.watch('index.html').on('change', browserSync.reload);
-    gulp.watch('css/style.css').on('change', browserSync.reload);
+    gulp.watch('index.html').on('change', browserSync.reload); 
 
 });
 
