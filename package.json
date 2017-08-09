@@ -1,0 +1,27 @@
+{
+  "name": "flexbox-practicing",
+  "version": "1.0.0",
+  "description": "A simple page to practices FlexBox",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmarcosp/flexbox-practicing.git"
+  },
+  "keywords": [
+    "flexbox",
+    "css3"
+  ],
+  "author": "Marcos Vinicius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmarcosp/flexbox-practicing/issues"
+  },
+  "homepage": "https://github.com/vmarcosp/flexbox-practicing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
